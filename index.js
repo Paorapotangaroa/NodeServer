@@ -37,4 +37,4 @@ app.get("/searchPokemon", (req, res) => {
         res.status(500).json({ err });
     });
 });
-app.listen(port, () => console.log("Express App has started and server is listening!"));
+app.listen(port, () => console.log("Express App 2 has started and server is listening!"));
