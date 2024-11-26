@@ -1,7 +1,7 @@
 let express = require("express"); //importing/bringing in the express library
 let app = express(); //making the object of the web application and calling it app
 let path = require("path"); //importing/bringing in the path library
-const port = 3000; //local host:5000 will take you to the website
+const port = process.env.PORT || 3000; //local host:5000 will take you to the website
 app.set("view engine", "ejs"); //we are using ejs for our html pages
 app.set("views", path.join(__dirname, "views")); //find the views folder and use it
 app.use(express.urlencoded({ extended: true })); //
